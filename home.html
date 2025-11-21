@@ -590,6 +590,89 @@
 <!--our FAQ section END aak}-->
 
 
+<!--Contact form section STRAT aak}-->
+
+<section id="contactPremium" style="width:100%;padding:140px 0;display:flex;justify-content:center;">
+
+<style>
+/* ========= DESKTOP ========= */
+@media(min-width:900px){
+ #cpBox{
+  width:85%;max-width:780px;padding:65px 55px;border-radius:28px;
+  background:linear-gradient(180deg,rgba(25,35,70,.55),rgba(10,20,40,.45));
+  border:1px solid rgba(255,255,255,.10);
+  box-shadow:0 0 65px rgba(0,0,0,.60), inset 0 0 45px rgba(255,255,255,.05);
+  backdrop-filter:blur(18px);
+ }
+ #cpTitle{font-size:2.7rem;margin-bottom:35px;color:#eef1ff;text-align:center;font-weight:700;}
+}
+
+/* ========= TABLET ========= */
+@media(max-width:900px){
+ #contactPremium{padding:120px 0;}
+ #cpBox{
+  width:88%;max-width:600px;margin:auto;padding:55px 35px;border-radius:26px;
+  background:linear-gradient(180deg,rgba(25,35,70,.48),rgba(10,20,40,.38));
+  border:1px solid rgba(255,255,255,.09);backdrop-filter:blur(14px);
+  box-shadow:0 0 55px rgba(0,0,0,.55);margin-left:6%;margin-right:6%;
+ }
+ #cpTitle{font-size:2.2rem;margin-bottom:28px;text-align:center;}
+}
+
+/* ========= MOBILE ========= */
+@media(max-width:600px){
+ #contactPremium{padding:100px 0;}
+ #cpBox{
+  width:92%;max-width:460px;margin:auto;padding:35px 20px;border-radius:22px;
+  background:linear-gradient(180deg,rgba(25,35,70,.55),rgba(10,20,40,.45));
+  border:1px solid rgba(255,255,255,.10);box-shadow:0 0 45px rgba(0,0,0,.55);
+ }
+ #cpBox *{max-width:100%;box-sizing:border-box;}
+ #cpTitle{font-size:1.75rem;margin-bottom:22px;text-align:center;}
+}
+
+/* Inputs */
+.cpInp{
+ width:100%;padding:17px 20px;margin-bottom:20px;border-radius:16px;
+ border:1px solid rgba(255,255,255,.18);outline:none;color:#fff;
+ background:rgba(255,255,255,.10);font-size:1rem;
+ box-shadow:inset 0 0 15px rgba(0,0,0,.45);transition:.25s;
+}
+.cpInp:focus{
+ background:rgba(255,255,255,.20);border-color:#3f89ff;
+ box-shadow:0 0 22px rgba(0,132,255,.45);
+}
+.cpInp::placeholder{color:#cfd0d4;}
+
+/* Button */
+#cpBtn{
+ width:100%;padding:16px;border-radius:50px;border:none;
+ background:linear-gradient(90deg,#3f89ff,#7c4dff);color:#fff;
+ font-size:1.15rem;font-weight:600;cursor:pointer;
+ box-shadow:0 0 30px rgba(65,120,255,.45);
+ transition:.3s;margin-top:10px;
+}
+#cpBtn:hover{transform:translateY(-4px);opacity:.95;}
+</style>
+
+<div id="cpBox">
+
+ <h2 id="cpTitle">Ask Anything From Anywhere!</h2>
+
+ <input class="cpInp" type="text" placeholder="Full Name">
+ <input class="cpInp" type="email" placeholder="Email Address">
+ <textarea class="cpInp" rows="4" placeholder="Your Message"></textarea>
+
+ <button id="cpBtn">Submit Now</button>
+
+</div>
+
+</section>
+
+
+<!--Contact form section END aak}-->
+
+
 
 
 
