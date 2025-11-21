@@ -457,125 +457,61 @@
 
 <!--Bitcoin Marquee section end{aak}-->
 
-<!--Our advisor 2 section START{aak}-->
+<!--Our tokeninfo section START{aak}-->
 <section id="tokenInfo" style="width:100%;padding:120px 0;">
-
 <style>
-/* Fade animation */
-@keyframes fadeUp{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:translateY(0);}}
-
-/* Desktop */
 @media(min-width:900px){
- #tiWrap{width:90%;max-width:1400px;margin:auto;display:flex;gap:60px;align-items:center;}
- #tiLeft{flex:1;}
- #tiRight{flex:1;}
- #tiImg{width:100%;max-width:460px;display:block;margin:auto;animation:fadeUp 1s;}
- #tiList div{margin-bottom:28px;}
- .ti-num{font-size:1.4rem;font-weight:700;color:#33a1ff;display:block;margin-top:6px;}
- #rLine{height:3px;background:#33a1ff;width:60%;margin-top:8px;border-radius:20px;}
- #bonusRow{width:90%;max-width:1400px;margin:70px auto;display:flex;gap:35px;}
- .bonus-card{flex:1;padding:45px;background:#0f0f0f;border:1px solid rgba(255,255,255,.06);border-radius:18px;text-align:center;animation:fadeUp 1s;}
- .b-num{font-size:3.4rem;font-weight:800;margin-bottom:10px;}
+#tiWrap{width:90%;max-width:1400px;margin:auto;display:flex;gap:60px;align-items:center;}
+#tiLeft,#tiRight{flex:1;} #tiImg{width:100%;max-width:480px;margin:auto;display:block;}
+#tiRight h2{font-size:3rem;margin-bottom:30px;font-weight:700;}
+.ti-row{margin-bottom:25px;} .ti-label{color:#ccc;font-size:1rem;} .ti-num{color:#33c1ff;font-size:1.05rem;font-weight:600;}
+.ti-line{height:3px;background:#33c1ff;width:65%;border-radius:20px;margin-top:8px;}
+#bonusRow{width:90%;max-width:1300px;margin:70px auto;display:flex;gap:35px;}
+.b-card{flex:1;background:#0f0f0f;padding:45px;border-radius:18px;text-align:center;border:1px solid rgba(255,255,255,.08);box-shadow:0 0 35px rgba(0,0,0,.45);}
+.b-title{color:#33a1ff;font-size:.9rem;margin-bottom:8px;} .b-num{font-size:3.6rem;font-weight:800;margin-bottom:6px;} .b-sub{color:#aaa;font-size:.9rem;}
 }
-
-/* Tablet */
 @media(max-width:900px){
- #tiWrap{width:90%;margin:auto;display:flex;flex-direction:column;gap:40px;text-align:center;}
- #tiImg{width:65%;margin:auto;}
- .ti-num{font-size:1.6rem;}
- #rLine{width:70%;}
- #bonusRow{width:90%;margin:60px auto;display:grid;grid-template-columns:1fr 1fr;gap:25px;}
- .bonus-card{padding:40px;}
- .b-num{font-size:3rem;}
+#tiWrap{width:90%;margin:auto;display:flex;flex-direction:column;gap:40px;text-align:center;}
+#tiImg{width:70%;margin:auto;} #tiRight h2{font-size:2.5rem;}
+.ti-line{width:75%;margin:auto;margin-top:8px;}
+#bonusRow{width:90%;margin:60px auto;display:flex;flex-wrap:wrap;gap:25px;}
+.b-card{width:46%;padding:35px;} .b-num{font-size:3rem;}
 }
-
-/* Mobile */
-@media(max-width:550px){
- #tiImg{width:80%;}
- .ti-num{font-size:1.5rem;}
- #rLine{width:85%;}
- #bonusRow{grid-template-columns:1fr;}
- .bonus-card{padding:35px;}
- .b-num{font-size:2.8rem;}
- #tokenInfo h2{font-size:2.2rem;}
+@media(max-width:500px){
+#tiImg{width:85%;} #tiRight h2{font-size:2.1rem;margin-bottom:20px;}
+.ti-label{font-size:.9rem;} .ti-num{font-size:.95rem;} .ti-line{width:90%;}
+#bonusRow{display:flex;flex-direction:column;gap:20px;}
+.b-card{width:100%;padding:30px;} .b-num{font-size:2.6rem;}
 }
 </style>
 
-<!-- TOP CONTENT -->
 <div id="tiWrap">
+ <div id="tiLeft"><img id="tiImg" src="IMG/summary_img.png"></div>
 
- <!-- LEFT IMAGE -->
- <div id="tiLeft">
-   <img id="tiImg" src="IMG/HERO.png">
- </div>
-
- <!-- RIGHT -->
  <div id="tiRight">
-   <span style="color:#7aa2ff;font-size:.9rem;letter-spacing:1px;">OUR ADVISORS</span>
-   <h2 style="font-size:3rem;font-weight:700;margin:10px 0 30px;">Meet with our avengers</h2>
+  <span style="color:#7aa2ff;font-size:.95rem;letter-spacing:1px;">OUR ADVISORS</span>
+  <h2>Meet with our avengers</h2>
 
-   <div id="tiList">
-
-     <div>
-       Token Offer
-       <span class="ti-num">46,000,000</span>
-       <div id="rLine"></div>
-     </div>
-
-     <div>
-       UTO Bounties
-       <span class="ti-num">11,500,000</span>
-       <div id="rLine"></div>
-     </div>
-
-     <div>
-       UTO Community Reserve
-       <span class="ti-num">423,000,000</span>
-       <div id="rLine"></div>
-     </div>
-
-     <div>
-       UTO Community Building
-       <span class="ti-num">23,000,000</span>
-       <div id="rLine"></div>
-     </div>
-
-   </div>
+  <div class="ti-row"><span class="ti-label">Token Offer - </span><span class="ti-num">46,000,000</span><div class="ti-line"></div></div>
+  <div class="ti-row"><span class="ti-label">UTO Bounties - </span><span class="ti-num">11,500,000</span><div class="ti-line" style="width:75%;"></div></div>
+  <div class="ti-row"><span class="ti-label">UTO Community Reserve - </span><span class="ti-num">423,000,000</span><div class="ti-line" style="width:85%;"></div></div>
+  <div class="ti-row"><span class="ti-label">UTO Community Building - </span><span class="ti-num">23,000,000</span><div class="ti-line" style="width:70%;"></div></div>
  </div>
-
 </div>
 
-<!-- BONUS CARDS -->
 <div id="bonusRow">
-
-  <div class="bonus-card">
-    <p style="color:#33a1ff;font-size:.95rem;">PRE-SALES</p>
-    <div class="b-num">25%</div>
-    <p style="color:#999;">EARLY BONUS</p>
-  </div>
-
-  <div class="bonus-card">
-    <p style="color:#33a1ff;font-size:.95rem;">ICO SALE – WEEK 1</p>
-    <div class="b-num">15%</div>
-    <p style="color:#999;">EARLY BONUS</p>
-  </div>
-
-  <div class="bonus-card">
-    <p style="color:#33a1ff;font-size:.95rem;">ICO SALE – WEEK 2</p>
-    <div class="b-num">1%</div>
-    <p style="color:#999;">EARLY BONUS</p>
-  </div>
-
+ <div class="b-card"><span class="b-title">PRE-SALES</span><div class="b-num">25%</div><div class="b-sub">EARLY BONUS</div></div>
+ <div class="b-card"><span class="b-title">ICO SALE - WEEK 1</span><div class="b-num">15%</div><div class="b-sub">EARLY BONUS</div></div>
+ <div class="b-card"><span class="b-title">ICO SALE - WEEK 2</span><div class="b-num">1%</div><div class="b-sub">EARLY BONUS</div></div>
 </div>
 
-<!-- BUTTON -->
-<div style="text-align:center;margin-top:15px;">
- <a href="#" style="padding:14px 40px;border-radius:50px;background:linear-gradient(90deg,#6b4bff,#a855f7);color:#fff;font-weight:600;text-decoration:none;">PURCHASE NOW</a>
+<div style="text-align:center;margin-top:40px;">
+ <a href="#" style="padding:12px 40px;border-radius:50px;background:linear-gradient(90deg,#6b4bff,#a855f7);color:#fff;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:10px;"><i class='bx bx-purchase-tag'></i> PURCHASE NOW</a>
 </div>
 
 </section>
 
-<!--our advisor 2 section END{aak}-->
+<!--our tokeninfo section END{aak}-->
 
 
 </body>
