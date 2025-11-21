@@ -24,7 +24,7 @@
       <a href="home.html" style="color:#fff;text-decoration:none;font-size:1rem;font-weight:500;transition:.3s ease;">Home</a>
       <a href="#features" style="color:#fff;text-decoration:none;font-size:1rem;font-weight:500;transition:.3s ease;">Features</a>
       <a href="#roadmap" style="color:#fff;text-decoration:none;font-size:1rem;font-weight:500;transition:.3s ease;">Roadmap</a>
-      <a href="#" style="color:#fff;text-decoration:none;font-size:1rem;font-weight:500;transition:.3s ease;">FAQ</a>
+      <a href="#platform" style="color:#fff;text-decoration:none;font-size:1rem;font-weight:500;transition:.3s ease;">FAQ</a>
       <a href="#" style="color:#fff;text-decoration:none;font-size:1rem;font-weight:500;transition:.3s ease;">Blog</a>
       <a href="#" style="color:#fff;text-decoration:none;font-size:1rem;font-weight:500;transition:.3s ease;">Contact</a>
     </nav>
@@ -512,6 +512,43 @@
 </section>
 
 <!--our tokeninfo section END{aak}-->
+
+<!--our FAQ section START aak}-->
+<section id="platform" style="width:100%;padding:120px 0;"><style>
+#pfBox{width:90%;max-width:1400px;margin:auto;padding:70px 60px;border-radius:30px;background:rgba(255,255,255,.02);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.05);box-shadow:0 0 55px rgba(0,0,0,.45);}
+.pf-icon{width:70px;height:70px;border-radius:50%;display:flex;justify-content:center;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);backdrop-filter:blur(10px);transition:.35s;box-shadow:0 0 15px rgba(0,0,0,.35);}
+.pf-icon:hover{transform:translateY(-8px) scale(1.05);background:rgba(255,255,255,.1);box-shadow:0 0 22px rgba(110,75,255,.45);}
+.faq-item{padding:25px 0;border-bottom:1px solid #1c1c1c;cursor:pointer;} .faq-q{display:flex;align-items:center;gap:15px;} .faq-q i{font-size:1.35rem;color:#7aa2ff;transition:.3s;}
+.faq-a{display:none;color:#999;font-size:.95rem;line-height:1.65;margin-top:12px;padding-left:35px;max-width:460px;animation:fade .4s ease;}
+@keyframes fade{0%{opacity:0;transform:translateY(10px);}100%{opacity:1;transform:translateY(0);}}
+@media(min-width:900px){#pfWrap{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center;} #pfIcons{display:flex;gap:28px;margin-top:40px;}}
+@media(max-width:900px){#pfBox{padding:60px 40px;} #pfWrap{display:flex;flex-direction:column;gap:70px;text-align:center;} #pfIcons{display:flex;gap:25px;justify-content:center;} .faq-a{padding-left:0;text-align:center;}}
+@media(max-width:550px){#platform h2{font-size:1.9rem!important;line-height:1.28!important;} #pfBox{padding:45px 25px;border-radius:25px;} .pf-icon{width:60px;height:60px;} #pfIcons{gap:18px;margin-top:30px;} .faq-item{padding:20px 0;} .faq-q h3{font-size:.98rem;}}
+@media(max-width:400px){#platform h2{font-size:1.7rem!important;}}
+</style>
+<div id="pfBox"><div id="pfWrap">
+<div>
+ <span style="color:#7aa2ff;font-size:.9rem;letter-spacing:1px;">AVAILABLE PLATFORM</span>
+ <h2 style="font-size:3rem;font-weight:700;margin:12px 0 18px;">Our Iconic is available<br>in multi-device</h2>
+ <p style="color:#aaa;font-size:1rem;line-height:1.65;max-width:430px;">Access Iconic anywhere — iOS, Android, Windows, Mac & Web with full seamless sync.</p>
+ <div id="pfIcons">
+  <div class="pf-icon"><i class='bx bxl-apple' style="color:#fff;font-size:1.8rem;"></i></div>
+  <div class="pf-icon"><i class='bx bxl-play-store' style="color:#fff;font-size:1.8rem;"></i></div>
+  <div class="pf-icon"><i class='bx bxl-windows' style="color:#fff;font-size:1.8rem;"></i></div>
+  <div class="pf-icon"><i class='bx bx-globe' style="color:#fff;font-size:1.8rem;"></i></div>
+ </div>
+</div>
+<div>
+ <div class="faq-item"><div class="faq-q"><i class='bx bx-plus'></i><h3 style="margin:0;font-size:1.1rem;">How does blockchain ensure transaction security?</h3></div><p class="faq-a">Blockchain uses decentralized verification — making every transaction tamper-proof.</p></div>
+ <div class="faq-item"><div class="faq-q"><i class='bx bx-plus'></i><h3 style="margin:0;font-size:1.1rem;">How do you store cryptocurrencies securely?</h3></div><p class="faq-a">Hardware wallets, cold storage & multisig ensure maximum safety.</p></div>
+ <div class="faq-item"><div class="faq-q"><i class='bx bx-plus'></i><h3 style="margin:0;font-size:1.1rem;">What causes crypto price volatility?</h3></div><p class="faq-a">Demand, utility, regulation & liquidity all impact price movements.</p></div>
+ <div class="faq-item"><div class="faq-q"><i class='bx bx-plus'></i><h3 style="margin:0;font-size:1.1rem;">What are the benefits of decentralization?</h3></div><p class="faq-a">No central authority, higher reliability and transparent systems.</p></div>
+</div></div></div>
+</section>
+<script>document.querySelectorAll(".faq-item").forEach(f=>{f.addEventListener("click",()=>{let a=f.querySelector(".faq-a"),i=f.querySelector("i");if(a.style.display==="block"){a.style.display="none";i.classList.replace("bx-minus","bx-plus");}else{document.querySelectorAll(".faq-a").forEach(x=>x.style.display="none");document.querySelectorAll(".faq-item i").forEach(ic=>ic.classList.replace("bx-minus","bx-plus"));a.style.display="block";i.classList.replace("bx-plus","bx-minus");}})});</script>
+<!--our FAQ section END aak}-->
+
+
 
 
 </body>
