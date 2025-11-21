@@ -314,6 +314,47 @@
 </section>
 <!--features section end{aak}-->
 
+<!--COMPANY MARQUEE section START{aak}-->
+
+<section id="brands" style="width:100%;padding:80px 0;text-align:center;"><style>
+@media(min-width:900px){
+ #brandWrap{width:90%;max-width:1300px;margin:auto;display:flex;justify-content:center;gap:80px;opacity:.85;}
+}
+@media(max-width:900px){
+ #brandWrap{width:90%;margin:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:40px;opacity:.85;}
+}
+/* MOBILE MARQUEE ONLY */
+@media(max-width:600px){
+ #brandWrap{width:200%;display:flex;gap:40px;flex-wrap:nowrap!important;animation:brandScroll 14s linear infinite;}
+ #brandWrap img{width:90px;}
+ @keyframes brandScroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+ #brands h4{font-size:.9rem!important;}
+}
+@media(max-width:400px){
+ #brandWrap img{width:75px;} #brands h4{font-size:.85rem!important;}
+}
+</style>
+
+<h4 style="color:#0aa0ff;font-size:.95rem;margin-bottom:45px;letter-spacing:1px;font-weight:600;">
+ SUPPORTED BY GLOBAL BRANDS
+</h4>
+
+<div id="brandWrap">
+ <img src="IMG/brand_img01.png" style="width:120px;opacity:.65;">
+ <img src="IMG/brand_img02.png" style="width:120px;opacity:.65;">
+ <img src="IMG/brand_img03.png" style="width:120px;opacity:.65;">
+ <img src="IMG/brand_img04.png" style="width:120px;opacity:.65;">
+ <img src="IMG/brand_img05.png" style="width:120px;opacity:.65;">
+
+ <!-- duplicate only for mobile scroll -->
+</div>
+
+</section>
+
+
+<!--COMPANY MARQUEE section end{aak}-->
+
+
 <!--Rodmap section Start{aak}-->
 <section id="roadmap" style="width:100%;padding:120px 0; margin-left: 7%;">
 <style>
@@ -547,6 +588,8 @@
 </section>
 <script>document.querySelectorAll(".faq-item").forEach(f=>{f.addEventListener("click",()=>{let a=f.querySelector(".faq-a"),i=f.querySelector("i");if(a.style.display==="block"){a.style.display="none";i.classList.replace("bx-minus","bx-plus");}else{document.querySelectorAll(".faq-a").forEach(x=>x.style.display="none");document.querySelectorAll(".faq-item i").forEach(ic=>ic.classList.replace("bx-minus","bx-plus"));a.style.display="block";i.classList.replace("bx-plus","bx-minus");}})});</script>
 <!--our FAQ section END aak}-->
+
+
 
 
 
